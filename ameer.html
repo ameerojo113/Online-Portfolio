@@ -56,8 +56,9 @@
       <small>
         <a href=""><i class="bx bx-arrow-to-left"></i>Click here to go back</a>
       </small>
-      <h1>Ameer Rojo</h1>
-      <p>I'm a <span class="typed" data-typed-items="Developer,Gamer,Rider"></span></p>
+      <p class="h3" id="greet"></p>
+      <h1>I'm Ameer Rojo</h1>
+      <p>A <span class="typed" data-typed-items="Developer,Gamer,Rider"></span></p>
       <div class="social-links">
         <a href="https://twitter.com/disameer1" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
         <a href="https://www.facebook.com/AmeerRojo/" class="facebook" target="_blank"><i
@@ -303,6 +304,21 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    var today = new Date();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var greeting
+    if (today.getHours() >= 4 && today.getHours() < 12) {
+      greeting = "Good Morning, Welcome to my Portfolio!";
+    } else if (today.getHours() >= 12 && today.getHours() < 16) {
+      greeting = "Good Afternoon, Welcome to my Portfolio!";
+    } else if (today.getHours() >= 16 && today.getHours() < 24) {
+      greeting = "Good Evening, Welcome to my Portfolio!";
+    } else if (today.getHours() < 4) {
+      greeting = "Early Morning, Welcome to my Portfolio!";
+    }
+    document.getElementById("greet").innerHTML = greeting;
+  </script>
 
 </body>
 
