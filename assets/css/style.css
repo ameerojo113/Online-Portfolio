@@ -142,6 +142,9 @@ h6 {
     border-right: 1px solid #e6e9ec;
     left: -300px;
   }
+  .contact .info .cert {
+    margin-top: 40px;
+  }
 }
 
 @media (min-width: 992px) {
